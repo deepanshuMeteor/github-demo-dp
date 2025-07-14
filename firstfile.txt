@@ -1,2 +1,5 @@
 Welcome to AIOps training
 We will cover using AI in Development
+
+By
+  Deepanshu Pasrija
