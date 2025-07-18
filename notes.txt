@@ -1,0 +1,1040 @@
+
+
+
+
+Good Morning Everyone
+
+Welcome to AIOps Training
+
+Start Time - 09:40 AM
+
+Waiting for audience
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Day1:
+1. Intro to AIOps
+2. Source Control - GitHub
+3. Intro to DevOps
+4. CI-CD
+
+1. Get started with Azure DevOps
+2. Create pipelines with Azure DevOps
+3. AI with Logs - Anomaly Detection
+
+Day3:
+1. Use the CLI for our resource deployment
+2. Azure ML
+3. Auto ML
+4. AI services - Computer vision and Text Analytics
+
+Day4
+1. Intro Gen AI
+2. Intro to Copilot
+3. Types of Copilot - M365 Copilots
+4. GitHub Copilot
+5. Data Preprocessing
+
+Day5
+1. Monitoring - Alerts
+2. Cost management
+3. Azure policies
+4. Governance
+5. Locks
+
+Azure Monitor: Managing health, Insights into resources
+
+VM, Storage Account, ML service
+
+How?
+Log Analytics - Collecting logs -
+	- Query logs - KQL, UI
+Create the metrics - monitor
+Advisor - Usage - Recommendations - cost, scaling, security 
+
+VM - 
+50 users - No issues 
+
+500 users - Scale up
+
+Alert - CPU Usage - >80%
+	Notification - SMS/Notification/Email
+	
+Application - DB - User is created
+
+Send email - 
+	Logic Apps - Workflow 
+		Integration to Emailing service
+	Sequence of actions - 
+
+Machine Learning - App Insights 
+SQL DB, VM 
+
+
+
+
+
+
+
+
+
+
+
+
+IaaC - 
+1. Cloud shell - Powershell, Bash
+2. ARM template, bicep
+3. Terraform
+
+
+
+Please change the name and add your initials for the following in the ARM Template:
+1. vmNamePrefix
+2. pipNamePrefix
+3. nicNamePrefix
+4. virtualNetworkName
+5. nsgName
+6. Change default value for virtualNetworkResourceGroup - aiopsuser<number>
+
+
+
+
+
+
+
+
+
+
+Please complete the Capstone Project
+
+Link in chat window
+
+
+
+
+
+
+
+
+
+
+
+
+Please complete lab for Implementing Monitoring
+
+Link in chat window
+
+
+
+Azure SQL Database
+
+Serverless - 
+Hyperscale - 
+
+
+Electricity - 
+iNfra -  
+
+Subscriptions:
+1. Azure free trail - Sign up for azure - 200$ for a month
+2. Pay as you go - 
+
+IaaS - Virtual Machine, SQL db on Virtual Machine - 99%
+PaaS - App Service, Azure SQL Database  - 99-99.99
+	Automated backup, 
+SaaS - M365 - Outlook, teams, ...
+	D365 - Sales, Finance, Customer service
+
+
+SLA - service level agreement - 
+Python - Linux
+.Net - Windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MANDATORY: Please fill the feedback
+
+Link in chat window
+
+
+
+
+
+
+
+
+AI - Computer Vision, text analytics, anomaly detection
+
+Gen AI - Generating new content - Image, text, Code
+
+
+
+
+AIopsuser1 - East US
+AIopsuser2 - East US 2
+AIopsuser3 - West US
+AIopsuser4 - West US 2
+AIopsuser5 - Central US
+AIopsuser6 - North central US
+AIopsuser7 - west US 3
+
+
+
+
+
+
+
+
+
+
+
+
+GitHub - Development - Store all my code
+
+
+Docker - Docker image
+Docker Hub/Container registry
+
+Containers - PaaS
+
+	Load balancer
+VM	VM	Vm	VM	VM	
+	Kubernetes
+Con	Con	Con	Con	COn
+Sign In 
+	Username - Deepanshu
+	password - *********
+	Address: Pin code, state, country, address line 1
+
+JSON 
+data = {
+	"username":"Deepanshu",
+	"password":"*******",
+	"address":{
+		"Pincode":120003
+		"state":"Haryana"
+	}
+}
+
+XML:
+data = 
+<username>deepanshu</username>
+<password>********</password>
+
+
+$rg = 'aiops'
+$location = 'East US'
+$vnetName = 'MyVirtualNetwork'
+$subnetName = 'MySubnet'
+$nsgName = 'myNSG'
+$nicName = 'MyNetworkInterface'
+$vmName = 'winvm45'
+$addressPrefixVNet = '10.0.0.0/16'
+$addressPrefixSubnet = '10.0.1.0/24'
+
+$subnetId = "/subscriptions/11ceb257-f3cc-4fc0-aa96-a24dacc91774/resourceGroups/$rg/providers/Microsoft.Network/virtualNetworks/$vnetName/subnets/$subnetName"
+
+New-AzNetworkInterface -Name $nicName -ResourceGroupName $rg -Location $location -SubnetId $subnetId
+
+New-AzVM -ResourceGroupName $rg -Location $location -Name $vmName -Credential (Get-Credential) -NetworkInterfaceDeleteOption "Detach" -SubnetName $subnetName
+
+Create a VM using Copilot
+1. Open copilot: "generate a powershell script to create a vm wth public ip address to connect using RDP"
+2. Copy and replace the resource group name - aiops, vnet name="vnet-<initials>
+3. Copy and run all commands in Powershell
+4. Replace the subscription id from azure portal
+5. Skip NIC creation
+6. Before you run the last command, change the VM name
+
+
+Classification model for apples and oranges
+
+High compute 
+Data - apples and oranges
+ Training model - 5-10 years
+
+80-90 % accuracy 
+Huge costs - servers, data training
+
+95+%
+
+Age of empires - 1999
+
+
+CSP - Microsoft - AI-ML
+Google - Big Data
+AWS - 
+
+
+
+
+
+
+Please watch the video for Responsible AI
+
+Link in chat window
+
+Machine Learning :
+1. Supervised
+	Output/label - known
+	Classification, Regression 
+2. Unsupervised
+	Output is unknown 
+		Categories - 
+	Clustering
+
+
+
+
+
+Please explore the Copilot Studio creative use cases with videos
+
+Link in chat window
+
+
+1. Users navigate to Azure Portal (https://portal.azure.com)
+2. Users will then search for virtual machines and select Virtual Machine Scale Set on left menu (name: aiops-users)
+3. After clicking here, users will be able to find their VMs, and select the VM for their username.
+4. Then they click on connect, and select connect with Bastion.
+5. The username and password for VMs is 
+Username: aiopsuser
+Password: aiopsuser123!
+6. Lab environment opens up in a new tab on browser.
+7. FYI, VScode and Python are installed, both can be found in C:\ drive. We need to download the extensions in the vscode(Github Copilot and Github copilot chat, python and Jupyter if needed)
+
+Chat - Open the chat for usage on right side
+Inline chat - Open file - Enables only when a file is open
+Quick chat - Open on the top of VS code
+
+Add context - Specify which file 
+	any questions, generate code - File specific content generation
+
+
+
+GPT - Directly without logging in - Does not create a session
+	- Sign in - History of all the sessions
+
+
+
+
+
+
+
+
+Please complete the lab for GitHub Copilot
+
+Link in chat window
+
+
+Application: Database 
+
+Database - 
+1 year - 10 GB
+10-15 years - Petabyte
+
+Big Data - Data Engineering 
+
+Database - ML, Analyse 
+
+MPP - Spark clusters 
+
+1. Take the data from database 
+2. Data Engineering - Making changes - Transformation, cleaning
+3. Transformed Dataset - ML Engineer - ML
+4. Transformed Dataset - Data Analyst - Data Analyst
+
+Pipelines - Data Engineering - Azure Data Factory
+Databricks - Python, scala, R - 
+	Analysing, clean, normalise 	
+Pandas, NumPy - Share link - 
+	dataframe - faster
+	List - Lot of time, memory 
+
+Windows VM - VS Code - Python - 
+
+
+
+
+Dataset - Patients - id, temperature, blood pressure, sugar,......
+	ML - Predict if the patient is diagnosed with Diabetes
+Does id play a role - no
+
+Some columns - m - cm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Windows VM - VS Code - 
+Linux VM - Connect with CLI 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Please explore the Copilot for Microsoft Edge
+
+1. Open Microsoft edge
+2. Click on copilot icon on top right
+3. Open a URL you want to add as context
+4. Specify a prompt to create a summary of the page.
+5. Allow the copilot to access the current page
+6. Feel free to explore more prompts and pages
+
+
+
+
+
+
+
+
+
+
+
+Accelerated Catalogue  Creation= http://www.youtube.com/watch?v=bIelmjhIAZ0
+
+ 
+
+Document discovery = http://www.youtube.com/watch?v=YHAtQNxH-i0
+
+ 
+
+Customer Service
+
+http://www.youtube.com/watch?v=62C72x0Y6jA 
+
+ 
+
+Entertainment:
+
+http://www.youtube.com/watch?v=oCZw7hQW1y4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pipelines - 
+Data engineering, ML, DevOps, Power Automate, Logic Apps
+
+DevOps:
+	Build - python3 app.py, mvn build
+	Test - mvn test
+	Deploy - 
+
+1. Microsoft hosted
+2. Self hosted
+
+
+
+20 users - VM
+
+500 users - 
+
+		LOAD BALANCING
+VM	VM	VM	VM	VM	VM
+
+App Services , Containers
+
+Azure VM :
+	1. Portal
+	2. CLI - Bash/Powershell - Scripts
+	3. ARM/Bicep Template - JSON 
+
+Virtual Network, NIC, Disk, Public IP
+
+- Copilot - creating this IAC Json, Script
+
+VM - Python, SQL, Visual Studio
+
+
+Application:
+1. Requirement gathering
+2. Database - Schema and test records
+3. Development - Angular, JS, Node - Java, python, PHP
+4. Testing - verify code by test cases - TDD
+5. Deployment - App is live
+ 
+
+Create a workflow:
+	build
+	test - Continuous Integration
+		Review - Code review
+	deploy - Continuous Deployment
+
+Server - VM, App service
+
+Continuous Deployment 		Continuous Delivery
+Deploy to prod			Review - deploy to prod
+
+
+
+
+
+Sign in :
+	phone number - 
+	password - 
+
+Assertion 1. phone 975785577
+password - hsa793943
+Assertion 2. phone - dsdhjhf454
+
+
+Sign in function - input - number, string
+
+
+
+Exercise: Basic python project - Linux -Anomaly detection
+
+
+Anomaly Detection
+1. Azure resources - Linux Virtual Machine
+	CLI - Bash/powershell - Copilot 
+	Portal - 
+2. Login to the Linux VM - ssh
+3. Install the required libraries
+4. Create a python project - find the anomaly from the logs
+
+
+Login to VM: Linux - SSH
+
+ssh azureuser@IP
+ssh -i aiops-dpvm_key azureuser@IP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Anomaly Detection:
+Anything that doesn't fit the pattern
+
+Financial Data - Org 
+ 
+week - do it myself
+month - team - 
+
+10-15 years - Anomaly 
+
+Logs- Error, Exception
+
+
+Virtual Machine - 
+	Virtual Network - 
+	NIC
+	NSG - 
+	Disk - Storage Account 
+	Public IP address
+
+
+Resource group - Container that holds all resources:
+		Create together	
+		Manage together
+		Delete together
+
+
+Org - Group 
+Domain - E-Commerce
+	Website - 10+
+	Mobile App - 10+
+
+Domain - Social Media
+	Website - 10+ 
+	Mobile App - 10+
+
+Delete all the resource - Website SM
+Correct - 10+ from 40+
+	1. Forgot to delete one res - Pay
+	2. Delete a wrong - the service 
+
+
+
+
+
+Any web resource - 10+
+	VM - 6-7
+	AI - 1
+	ML - 1
+	Database - 2
+	SMTP/Sendgrid - 1
+
+
+
+
+Azure/GCP/AWS - Cloud SP - Rent services
+
+On premises - 
+1. Buy the servers
+2. Buy/rent infrastructure
+3. 24/7 cooling - electricity
+
+Infra+server cost
+Cost of electricity
+
+South India  - East US
+
+20 users - VM - East US 
+
+AVAILABILITY SET
+Disaster recovery measure - multiple VMs
+	- Same datacenter 
+	
+AVAILABILITY ZONE
+Disaster recovery measure - multiple VMs in different DC
+VM or DC failure
+2 VMs in DC1			2 VMs in DC2
+
+Region Pair - East US - West US
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Please login to Azure Portal using the credentials shared in chat
+
+Please complete the process of changing password and MFA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Thank you for joining :)
+
+
+
+
+
+
+
+
+
+
+
+
+MicroServices: 
+
+App - E-Commerce - Monolithic
+1. Sign signup
+2. Product catergories
+3. Product listing
+4. Product page 
+5. Add to cart
+6. CHeckout
+7. Payment 
+8. Thank you
+
+
+Microservices:
+App 1 - Signin/signup - 1
+App 2 - Products - 2,3 4
+App 3 - Cart, Payment - 5,6,7
+App 4 - Post order processing
+
+Benefits:
+1. Easy to manage
+2. Easy to troubleshoot
+3. Easy to scale
+
+
+Source/Version Control 
+1. Merge conflicts 
+	2 employees - project - app.js
+	Emp A - Takes the updated code - starts - development
+	Emp B - Takes the updated code - starts - development
+	Emp A - Updates code 
+	Emp B - Updates code 
+2. Version - Creates a new project with updated code - change
+3. Branching - Create a copy of code - work on this
+	- no effect on the main app
+
+GitHub account - Repository - 
+
+
+GitHub - 
+	1. windows - GitHub UI
+	2. Linux - CLI 
+
+
+
+
+
+
+
+Please complete the Lab for Azure DevOps Boards
+
+Link in chat window
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Create a repository
+2. Add a new file with some text
+3. Create a new branch by name update-game
+4. Make a change in the firstfile on update-game branch
+
+Please complete Lab 02: Manage GitHub with pull request
+
+Link in chat window
+
+
+
+
+
+
+
+
+DevOps: Dev, UAT, Production
+1. Anytime a new commit/change is made to GitHub
+2. Create a workflow automatically:
+	a. Build my code
+	b. Test my code
+	c. Deploy my code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. create repo - create a readme file
+2. git status
+3. git add .
+4. git commit -m "creating first commit"
+5. git pull 
+6. git push
+
+
+7. create a branch
+8. Make changes
+9. git add .
+10. git commit -m "creating first commit"
+11. git checkout hotfix
+12. git push
+13. merge branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
