@@ -7,7 +7,13 @@ Day2:
 https://github.com/deepanshuMeteor/github-demo-dp/blob/main/AIOps_AzGitHub_Lab3.docx
 https://github.com/deepanshuMeteor/github-demo-dp/blob/main/AIOps_AzGitHub_Lab3-B.docx
 
+Day3:
+https://github.com/deepanshuMeteor/ComputerVision/blob/main/computervision.ipynb
+https://github.com/deepanshuMeteor/ComputerVision/blob/main/textanalysis.ipynb
+
+Day 4: 
 https://github.com/deepanshuMeteor/github-demo-dp/blob/main/Chatcompletions.ipynb
+https://github.com/deepanshuMeteor/github-demo-dp/blob/main/Data%20Preprocessing%20and%20Storing%20Datasets%20on%20GitHub.docx
 
 Microsoft Official courseware for the content covered:
 https://learn.microsoft.com/en-us/training/courses/az-900t00
