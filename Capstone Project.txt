@@ -1,0 +1,14 @@
+Project Statement: Create and deploy an Application using Azure DevOps and Copilot
+
+
+Pre-Requisites: Azure subscription, Visual Studio and GitHub Copilot
+
+Requirement:
+1.	Create a Virtual Machine using Cloud Shell and GitHub Copilot.
+2.	Create a Machine Learning model using Auto ML with a dataset of your choice.
+3.	Deploy the ML model on the VM GitHub.
+4.	Create alerts on the VM to send a notification every time the CPU Usage goes beyond 80%.
+
+Deliverables:
+1.	Please share the GitHub repository with the ML Model and Pipeline script.
+2.	Create a PPT for the App Workflow and snapshots of working application.
