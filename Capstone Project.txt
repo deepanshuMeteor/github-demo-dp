@@ -10,5 +10,5 @@ Requirement:
 4.	Create alerts on the VM to send a notification every time the CPU Usage goes beyond 80%.
 
 Deliverables:
-1.	Please share the GitHub repository with the ML Model and Pipeline script.
+1.	Please share the GitHub repository with the ML Model and IaaC script.
 2.	Create a PPT for the App Workflow and snapshots of working application.
