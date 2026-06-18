@@ -70,17 +70,10 @@ The repository is organized this way:
 You'll create a CI pipeline that builds and pushes container images to an Azure Container Registry (ACR).
 ### Create Resource Group
 
-An Azure Resource Manager service connection allows you to connect to Azure resources like Azure Key Vault from your pipeline. This connection lets you use a pipeline to deploy to Azure resources, such as an Azure App Service app, without needing to authenticate each time.
-
-1. In the Azure DevOps project, go to **Project settings > Service connections**.
-1. Select **Create service connection**, then select **Azure Resource Manager** and **Next**.
-1. In the **New Azure service connection** pane, verify the following settings and then select **Save**:
-   - **Identity type**: App registration (automatic)
-   - **Credential**: Workload identity federation
-   - **Scope level**: Subscription
-   - **Subscription**: _Select the subscription you are using for this lab_
-   - **Service Connection Name**: `azure subs`
-   - **Grant access permission to all pipelines**: Enabled
+1. Go to Azure Portal, search for **Resource Group** on the top search bar.
+2. Click on **Create** and specify the Resource Group Name as AZ400-EWebShop-<your-initials>.
+3. Select region as Central US.
+4. Click on Review + Create and then click on Create.
 
 ### Setup service connection
 
