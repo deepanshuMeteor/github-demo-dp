@@ -71,7 +71,7 @@ You'll create a CI pipeline that builds and pushes container images to an Azure 
 ### Create Resource Group
 
 1. Go to Azure Portal, search for **Resource Group** on the top search bar.
-2. Click on **Create** and specify the Resource Group Name as (AZ400-EWebShop-**your-initials**).
+2. Click on **Create** and specify the Resource Group Name as AZ400-EWebShop-**(your-initials)**.
 3. Select region as Central US.
 4. Click on Review + Create and then click on Create.
 
