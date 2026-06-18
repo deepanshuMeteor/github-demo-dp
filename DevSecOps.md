@@ -68,6 +68,19 @@ The repository is organized this way:
 ## Setup CI pipeline to build eShopOnWeb container
 
 You'll create a CI pipeline that builds and pushes container images to an Azure Container Registry (ACR).
+### Create Resource Group
+
+An Azure Resource Manager service connection allows you to connect to Azure resources like Azure Key Vault from your pipeline. This connection lets you use a pipeline to deploy to Azure resources, such as an Azure App Service app, without needing to authenticate each time.
+
+1. In the Azure DevOps project, go to **Project settings > Service connections**.
+1. Select **Create service connection**, then select **Azure Resource Manager** and **Next**.
+1. In the **New Azure service connection** pane, verify the following settings and then select **Save**:
+   - **Identity type**: App registration (automatic)
+   - **Credential**: Workload identity federation
+   - **Scope level**: Subscription
+   - **Subscription**: _Select the subscription you are using for this lab_
+   - **Service Connection Name**: `azure subs`
+   - **Grant access permission to all pipelines**: Enabled
 
 ### Setup service connection
 
@@ -211,8 +224,8 @@ You'll import a CD pipeline, customize it, and run it to deploy the container im
    - **YOUR-SUBSCRIPTION-ID** with your Azure subscription id
    - **az400eshop-NAME** replace NAME to make it globally unique
    - **YOUR-ACR.azurecr.io** and **ACR-USERNAME** with your ACR login server (both need the ACR name, can be reviewed on the ACR > Access Keys)
-   - **AZ400-EWebShop-NAME** with the resource group name defined before in the lab
-   - **vmImage: 'ubuntu-latest'** with **vmImage: 'windows-latest'**
+   - **AZ400-EWebShop-NAME** with the resource group name created before in the lab
+
 
 1. Select **Save and Run**
 1. Open the pipeline and wait for it to execute successfully
