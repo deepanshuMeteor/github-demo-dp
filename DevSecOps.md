@@ -39,7 +39,7 @@ First, you'll create an Azure DevOps project for this lab.
 1. Leave other fields with defaults
 1. Select **Create**
 
-   ![Screenshot of the create new project panel](media/create-project.png)
+   ![Screenshot of the create new project panel](https://github.com/MicrosoftLearning/mslearn-devops/tree/main/Instructions/advanced/media/create-project.png)
 
 ## Import the eShopOnWeb Git Repository
 
